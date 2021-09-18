@@ -1,0 +1,83 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+.navbar{
+    position:fixed;
+    width: 100%;
+    padding: 10px 0;
+    background-color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.full-width{
+    max-width: 1400px;
+    padding: 0 90px;
+    margin: auto;
+}
+
+.navbar .full-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 40px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.navbar .app-menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .app-menu li a{
+    color: white;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Home Section Syling */
+.home{
+    display: flex;
+    background: url(images/main-bg.jpg) no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color:whitesmoke;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .full-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .welcome{
+    font-size: 40px;
+}
+
+.home .home-content .my-name{
+    font-size: 80px;
+    font-weight: 600;
+    margin-left: -30px;
+}
+
+.home .home-content .my-job{
+    font-size: 50px;
+    margin: 8px 30px;
+}
+
+.home .home-content .my-job span{
+    color: crimson;
+    font-weight: 500;
+}
