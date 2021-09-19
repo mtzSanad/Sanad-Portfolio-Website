@@ -227,6 +227,104 @@
     color: crimson;
 }
 
+/* Service Section Styling */
+.services{
+    background: #111;
+    padding: 100px 0;
+}
+
+.services h2{
+    color:white;
+    margin-bottom: 60px;
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.services h2::before{
+    content: "";
+    width: 180px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background: white;
+}
+
+.services h2::after{
+    margin-top: 10px;
+    content: "what i provide";
+    font-weight: 450;
+    color: crimson;
+    bottom: -8px;
+    font-size: 20px;
+    background: #111;
+    left: 50%;
+    padding: 0 5px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.serivices-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.serivices-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.serivices-content .card i{
+    color: crimson;
+    font-size: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.serivices-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    margin: 10px 0;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.serivices-content .card p{
+    display: block;
+    font-size: 18px;
+    line-height: 1.6em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color:whitesmoke
+}
+
+.services .serivices-content .card:hover{
+    background: crimson;
+}
+.services .serivices-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serivices-content .card:hover .box{
+    transform: scale(1.07);
+}
+.services .serivices-content .card:hover i{
+    color: #fff;
+}
+
 /* Responsive media query */
 @media (max-width: 975px){
     .full-width{
