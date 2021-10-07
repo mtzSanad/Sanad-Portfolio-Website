@@ -5,7 +5,31 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+}
+
+html{
     scroll-behavior: smooth !important;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: crimson;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 38px;
+    z-index: 999;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.scroll-up-btn i{
+    font-size: 30px;
+    color: white;
+    margin-top: 4px ;
 }
 
 /* Navigation Bar */
@@ -20,6 +44,7 @@
 .navbar.sticky{
     padding: 15px 0;
     background: crimson;
+    z-index: 999;
 }
 
 .full-width{
@@ -324,6 +349,347 @@
 .services .serivices-content .card:hover i{
     color: #fff;
 }
+
+.services .serivices-content .card .box .text{
+    font-weight: 700;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+/* Skill Syling */
+.skill {
+    background: white;
+    padding: 100px 0;
+}
+
+.skill h2{
+    margin-bottom: 60px;
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.skill h2::before{
+    content: "";
+    width: 180px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background: #111;
+}
+
+.skill h2::after{
+    margin-top: 10px;
+    content: "What i can do";
+    font-weight: 450;
+    color: crimson;
+    bottom: -8px;
+    font-size: 20px;
+    background: white;
+    left: 50%;
+    padding: 0 5px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.skill .skill-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.skill .skill-content .column{
+    width: calc(50% - 60px)
+}
+
+.skill .skill-content .column .tag{
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 5px 7px;
+    margin: 7px 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: crimson;
+    transition: all 0.3s ease;
+}
+
+.skill .skill-content .column .tag:hover{
+    background: crimson;
+    color: white;
+    transform: scale(1.1);
+}
+.skill .skill-content .column .bar{
+    margin: 40px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.skill .skill-content .column .bar .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill .skill-content .column .bar .line{
+    height:3px;
+    margin-top: 5px;
+    background: lightgray;
+    position: relative;
+}
+
+.skill .skill-content .column .bar .line::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 3px;
+    background: crimson;
+}
+
+.skill .skill-content .column .bar.webapp .line::before{
+    width:98%;
+}
+
+.skill .skill-content .column .bar.website  .line::before{
+    width:93%;
+}
+
+.skill .skill-content .column .bar.db  .line::before{
+    width:85%;
+}
+
+.skill .skill-content .column .bar.ds  .line::before{
+    width:80%;
+}
+
+.skill .skill-content .column .bar.react  .line::before{
+    width:70%;
+}
+
+/* Samples Section */
+.samples{
+    background: #111;
+    padding: 100px 0;
+}
+
+.samples h2{
+    margin-bottom: 60px;
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+    color: white;
+}
+
+.samples h2::before{
+    content: "";
+    width: 180px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background: white;
+}
+
+.samples h2::after{
+    margin-top: 10px;
+    content: "check my work";
+    font-weight: 450;
+    color: crimson;
+    bottom: -8px;
+    font-size: 20px;
+    background: #111;
+    left: 50%;
+    padding: 0 5px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.samples .carousel  .card{
+    background-color: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 400px;
+}
+
+.samples .carousel  .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.samples .carousel  .card .box .text{
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.samples .carousel  .card .box p{
+    line-height: 1.5;
+}
+
+.samples .carousel  .card .box:hover{
+    transform: scale(1.05);
+}
+
+.samples .carousel  .card:hover{
+    background-color: crimson;
+}
+
+.samples .carousel  .card:hover img{
+    border-color: white;
+}
+
+.samples .carousel  .card .text{
+    font-size: 25px;
+    font-weight: 550;
+    margin: 10px 0px 7px 0px;
+}
+
+.samples .carousel  .card img{
+    width:150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid crimson;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+/* Contact Section */
+.contact{
+    background: white;
+    padding: 100px 0;
+}
+
+.contact h2{
+    margin-bottom: 60px;
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+    color: #111;
+}
+
+.contact h2::before{
+    content: "";
+    width: 180px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background: #111;
+}
+
+.contact h2::after{
+    margin-top: 10px;
+    content: "get in touch";
+    font-weight: 450;
+    color: crimson;
+    bottom: -8px;
+    font-size: 20px;
+    background: white;
+    left: 50%;
+    padding: 0 5px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.minicard{
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+.minicard i{
+    font-size: 25px;
+    color: crimson;
+    padding: 0 20px;
+}
+
+.minicard .info .head{
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 3px;
+}
+
+.minicard .info .sub{
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
+}
+
+.minicard a{
+    color: crimson;
+}
+
+footer{
+    padding: 10px 0;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    color: crimson;
+}
+
 
 /* Responsive media query */
 @media (max-width: 975px){
